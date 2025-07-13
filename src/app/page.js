@@ -61,7 +61,7 @@ export default function Home() {
 
       ctx.fillStyle="#818cf8";
       const textWidth=ctx.measureText(prediction.class).width;
-      ctx.fillRect(x,y,textWidth+7,parseInt(font,10)+4);
+      ctx.fillRect(x,y,textWidth + 7,parseInt(font,10) + 4);
 
       ctx.fillStyle="#fff";
       ctx.fillText(prediction.class,x,y);
@@ -76,7 +76,7 @@ export default function Home() {
     <div className="relative h-screen justify-center items-center bg-indigo-400">
       <video className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-8 border-dashed rounded-xl" width={500} height={350} autoPlay ref={videoRef} />
       <canvas
-        className="absolute left-0 top-0"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
         width={500} height={350}
         ref={canvasRef}
       />
